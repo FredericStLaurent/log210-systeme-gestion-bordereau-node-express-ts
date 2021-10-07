@@ -9,6 +9,7 @@ export class TeacherController {
     */
 
      public login(email: string, password: string) {
+      console.log(email)
       let teacher = Teacher.login(email, password);
       if (teacher !== null)
           return teacher;
